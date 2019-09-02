@@ -1,0 +1,150 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Visualization Project">
+    <meta name="author" content="Mark Berman">
+    <link rel="icon" href="../../favicon.ico">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <link href="css/starter-template.css" rel="stylesheet">
+    <link href="css/hcbiassum.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/1.18.0/d3-annotation.css" />
+    <link href="css/d3-tip.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+        <title>Domestic Hate Crime Bias Motivations(2005 - 2015)</title>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">CS498 - Final Project</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="hcmain.html">Home</a></li>
+             <li class="active" ><a href="hcbiassum.html">Scene 2</a></li>
+             <li ><a href="hcoffendsum.html">Scene 3</a></li>
+            <li ><a href="hcjumpoff.html">Scene 4</a></li>
+            <li ><a href="hcexploration.html">Final</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Begin page content -->
+
+
+
+
+  <div class="container"> <!-- start of main container -->
+
+          <div class="alert alert-info" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span></button>
+              <strong></strong> Tooltips are available. Use your mouse to hover over any circle on the line chart to see its tooltip.
+         </div>
+
+           <div class="container">
+             <div class="col-lg-12">
+              <div class="page-header">
+                <h1>Domestic Hate Crime Bias Motivations(2005 - 2015)</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="col-lg-12">
+              <p class="lead">The majority of hate crime incidents are the result of race, religion or sexual orientation bias. Disability bias hate crimes and other bias hate crimes are tracked by the department of Justice but they are few in number, averaging less than 100 incidents per year.
+              </p>
+              <p class="lead">Race bias hate crimes occur three times more frequently than either religion or sexual orientation bias hate crimes.  Race bias and religion bias hate crimes dropped during the first six years of Barack Obama’s presidency.  It is interesting to note that during this same time period sexual orientation hate crime rate remained static.
+              </p>
+              <p class="lead">2015 saw an increase of 3%, 4% and 22% for hates crimes involving race bias, sexual orientation bias and religion bias, respectively. The significant increase in religion bias hate crimes may be attributed to overall increase in domestic anti-Islamic sentiment since 2013 and specific acts of domestic terrorism, such as the mass shootings in San Bernardino, California conducted by two persons who pledged allegiance to the Islamic State.  This increase may also be attributed to the divisive presidential campaign, which began in earnest in 2015.
+              </p>
+              <br>
+              <br>
+              <br>
+              <h4 class="text-center">Dominant Hate Crime Bias Motivations</h4>
+              <h5 class="text-center">(2005 - 2015)</h5>
+              <div id="hcbiassum-svg"></div>  <!-- main hate crime incident image goes here -->
+              <div id="hcbiassum-legend-svg"></div>
+            </div>
+          </div>
+          <br>
+          <br>
+
+          <div class="container"> <!-- /start of next abd previous page container -->
+           <div class="col-lg-2 text-center" >
+            <a href="hcmain.html">
+            <button type="button" class="btn btn-default btn-lg btn-primary">
+             <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Previous
+            </button></a>
+           </div>
+            <div class="col-lg-8"></div>
+           <div class="col-lg-2 text-center" >
+            <a href="hcoffendsum.html">
+            <button type="button" class="btn btn-default btn-lg btn-primary">
+             <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>Next
+            </button></a>
+           </div>
+          </div> <!-- /end of next and previous page container -->
+
+
+  </div> <!-- /end of main container -->
+
+
+
+
+      <footer class="footer   text-center">
+        <div class="container">
+          <p class="text-muted"></p>
+          <strong>Author <a href="https://www.linkedin.com/in/mark-berman-b965961/"  target="_blank">Mark Berman</a></strong>
+        </div>
+
+      </footer>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+          integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+          crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/1.18.0/d3-annotation.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.js"></script>
+  <script src="lib/d3-tip.js"></script>
+  <script src="lib/hcbiassum.js"></script>
+   <script>
+      window.setTimeout(function() {
+        $(".alert").fadeTo(500, 0).slideUp(500, function(){
+          $(this).remove();
+        });
+        }, 
+      10000);
+  </script>
+
+</body>
+</html>
